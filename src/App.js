@@ -1,3 +1,4 @@
+import Footer from './components/Footer';
 import Header from './components/Header';
 import './index.css';
 
@@ -6,6 +7,7 @@ function App() {
     <div >
       <Header />
       <h1>Pizza Menu</h1>
+      <Footer />
     </div>
   );
 }
