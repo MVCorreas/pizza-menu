@@ -1,4 +1,5 @@
 import pizzaData from "../utils/pizzaData";
+import Pizza from "./Pizza";
 
 export default function Menu() {
   const pizzas = pizzaData;
@@ -16,15 +17,7 @@ export default function Menu() {
 
           <ul className="pizzas">
             {pizzas.map((pizza) => (
-              <li
-                key={pizza.name}
-                className={`pizza ${pizza.soldOut ? "sold-out" : ""}`}
-              >
-                <img src={pizza.photoName} alt={pizza.name} />
-                <h3>{pizza.name}</h3>
-                <p>{pizza.ingredients}</p>
-                <p className="price">${pizza.price.toFixed(2)}</p>
-              </li>
+              <Pizza key={pizza.name} pizzaObj={pizza} />
             ))}
           </ul>
         </>
