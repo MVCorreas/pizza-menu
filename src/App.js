@@ -1,12 +1,13 @@
 import Footer from './components/Footer';
 import Header from './components/Header';
+import Menu from './components/Menu';
 import './index.css';
 
 function App() {
   return (
     <div >
       <Header />
-      <h1>Pizza Menu</h1>
+      <Menu />
       <Footer />
     </div>
   );
